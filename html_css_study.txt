@@ -1,0 +1,14 @@
+block : layout짤때 자주사용
+inline : text적을때 자주사용
+
+block 요소 안에는 또 다른 block 요소, inline 요소를 포함가능
+inline 요소 안에는 inline 요소를 포함할 수 있고, block 요소를 포함할 수 없슴
+
+ul 순서 상관없을때
+ol 순서 상관 있을때
+li ul과 ol의 직속자식이어야만함
+ul 
+    <div>
+        <li>이런식이면 안됨
+닫는 태그가 없는 태그는 자식을 포함할 수 없는 태그이다
+파일의 로컬경로를 이용해서는 link걸수 없음 보안상
