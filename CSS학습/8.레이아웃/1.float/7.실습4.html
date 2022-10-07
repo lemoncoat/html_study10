@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습4</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <style>
+        /*내가한것
+         .container {
+            width: 55%;
+            margin: auto;
+            border: 3px solid #000;
+        }
+
+        h1 {
+            padding: 20px;
+            text-align: center;
+            font-size: 48px;
+            font-weight: 700;
+            font-family: '궁서';
+            background: lightgray;
+        }
+
+        h2 {
+            padding: 10px;
+            background: black;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        h2 .yellow {
+            color: yellow;
+            font-size: 26px;
+        }
+
+        ul.gallery {
+            height: 550px;
+            border: 1px solid blue;
+            background: gray;
+
+        }
+
+        ul li {
+            margin-top: 2%;
+            margin-right: 1%;
+            width: 23.75%;
+            float: left;
+            box-sizing: border-box;
+            height: 90%;
+            padding: 10px;
+        }
+
+        ul li:first-child {
+            margin-left: 1%;
+        }
+
+        .img-box {
+            width: 100%;
+            height: 200px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        p {
+            padding: 30px 10px 20px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 1.5;
+            color: slategrey;
+            text-align: justify;
+        }
+        #tulip {
+            background: red;
+        }
+
+        #tulip .img-box {
+            background-image: url('../../img/tulip.jpg');
+        }
+
+        #jebi {
+            background: violet;
+
+        }
+
+        #jebi .img-box {
+            background-image: url('../../img/jebi.jpg');
+        }
+
+        #hobak {
+            background: orange;
+        }
+
+        #hobak .img-box {
+            background-image: url('../../img/hobak.jpg');
+        }
+
+        #sunflower {
+            background: yellow;
+        }
+
+        #sunflower .img-box {
+            background-image: url('../../img/sunflower.jpg');
+        }
+
+        ul::after {
+            content: '';
+            clear: both;
+            display: block;
+        } */
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .container {
+            width: 800px;
+            margin: 20px auto 0;
+            border: 3px double #123456;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .container h1 {
+            background: #ccc;
+            font-size: 42px;
+            font-weight: 700;
+            font-family: cursive;
+            text-align: center;
+            padding: 20px 0;
+
+        }
+
+        .container .intro {
+            font-size: 18px;
+            text-align: center;
+            background: #332;
+            color: #fff;
+            padding: 10px 0;
+            border-bottom: 3px solid #888;
+        }
+
+        .container .intro .yellow {
+            color: #ff0;
+            font-size: 1.1em;
+        }
+
+        .container .gallery {
+            background: #6e6a6a;
+            padding: 20px 0;
+        }
+
+        .container .gallery li {
+            border: 1px solid #000;
+            box-sizing: border-box;
+            background: #fff;
+            width: 23.75%;
+            height: 340px;
+            margin-right: 1%;
+            float: left;
+            padding: 5px;
+        }
+
+        .container .gallery li:first-child {
+            margin-left: 1%;
+        }
+
+        .container .gallery li .img-box {
+            height: 150px;
+            border: 1px solid #888;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .container .gallery li p {
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 1.4;
+            color: #424242;
+            text-align: justify;
+
+            margin-top: 20px;
+            padding: 0 10px;
+        }
+
+        #tulip {
+            background: #d31515;
+        }
+
+        #tulip .img-box {
+            background-image: url('../../img/tulip.jpg');
+        }
+
+        #jebi {
+            background: #e941f9;
+        }
+
+        #jebi .img-box {
+            background-image: url('../../img/jebi.jpg');
+        }
+
+        #hobak {
+            background: #fe692b;
+        }
+
+        #hobak .img-box {
+            background-image: url('../../img/hobak.jpg');
+        }
+
+        #sunflower {
+            background: #f3ea33;
+        }
+
+        #sunflower .img-box {
+            background-image: url('../../img/sunflower.jpg');
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>나의 아름다운 정원</h1>
+
+        <h2 class="intro">사람들은 아마 자신에게 <span class="yellow">자신감을 북돋워 주는</span> 표정 있는 꽃들을 선호할 것이다.</h2>
+
+        <ul class="gallery clearfix">
+            <li id="tulip">
+                <div class="img-box"></div>
+                <p>
+                    너무 화려하지 않으며 고귀한 느낌을 가지고 있다.
+                    붉은 색이 단연 으뜸이며 한 송이만 있어도 빼어나다.
+                </p>
+            </li>
+            <li id="jebi">
+                <div class="img-box"></div>
+                <p>
+                    드물게 푸른색을 띠고 있으며 작지만 시원해 보이는
+                    어린 꽃이라고 할 수 있다. 여럿이 함께 있을 때 더욱 아름답다.
+                </p>
+            </li>
+            <li id="hobak">
+                <div class="img-box"></div>
+                <p>
+                    색도 모양도 화려하며 이름과 걸맞지 않게 아름다운 꽃으로
+                    매우 완숙한 이미지를 풍기는 꽃이다.
+                </p>
+            </li>
+            <li id="sunflower">
+                <div class="img-box"></div>
+                <p>
+                    태양만 바라보는 일편단심의 꽃으로 얼굴이 큰 편에
+                    속하며 송이가 적어야 제격이다.
+                </p>
+            </li>
+        </ul>
+
+    </div>
+</body>
+
+</html>
